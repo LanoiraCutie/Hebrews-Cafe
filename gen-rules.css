@@ -434,7 +434,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1599px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         width: auto;
         max-width: 100%;
@@ -489,5 +489,43 @@ body {
 
     .hamburger-btn.active .hamburger-line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1599px) {
+body {
+        width: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+        background-position: center;
+        background-image: url('./pics/hebrews-background-1.png');
+    }
+
+    .header-heb {
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    .home-container {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .footer-content-left .home-container {
+        margin-left: 0.3vw;
+    }
+
+    .footer-content-left .home-container .home-hei {
+        height: 40px;
+    }
+
+    .socmed-img {
+        width: 2vw;
+        height: auto;
+    }
+
+    .animated-opa-1 {
+        opacity: 1 !important;
     }
 }

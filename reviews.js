@@ -147,7 +147,14 @@ function sendEmail() {
 
     emailjs.send("service_mn635ze", "template_ryb4by7", templateParams)
         .then(() => {
-            alert("Email sent!");
+            const message = document.getElementById('message');
+            message.classList.remove('animated-opa-0');
+            message.classList.add('animated-opa-1');
+
+            setTimeout(() => {
+                message.classList.remove('animated-opa-1');
+                message.classList.add('animated-opa-0');
+            }, 3000);
         })
         .catch(() => {
             alert("Email not sent.");

@@ -369,7 +369,7 @@ section.main-content {
     }
 }
 
-@media only screen and (min-width: 768px)  and (max-width: 1599px) {
+@media only screen and (min-width: 768px)  and (max-width: 1023px) {
     section.main-content {
         width: 80vw;
         height: 30vh;
@@ -387,5 +387,26 @@ section.main-content {
 
     .aboutshort-area {
         height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1599px) {
+    section.main-content {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .pic-container>img {
+        max-height: 100%;
+        height: 20vh !important;
+        width: auto;
+    }
+    
+    .bestseller-area {
+        height: 60vh;
+    }
+
+    .aboutshort-area {
+        height: 40vh;
     }
 }

@@ -126,5 +126,12 @@ function closeMobileMenu() {
 function contacts(contact_id) {
     var copyText = document.getElementById(contact_id).innerText;
     navigator.clipboard.writeText(copyText);
-    alert("Copied to clipboard!");
+    const message = document.getElementById('message');
+            message.classList.remove('animated-opa-0');
+            message.classList.add('animated-opa-1');
+
+            setTimeout(() => {
+                message.classList.remove('animated-opa-1');
+                message.classList.add('animated-opa-0');
+            }, 2000);
 }

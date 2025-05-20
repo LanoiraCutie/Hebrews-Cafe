@@ -157,7 +157,7 @@
     }
 }
 
-@media only screen and (min-width: 768px)  and (max-width: 1599px) {
+@media only screen and (min-width: 768px)  and (max-width: 1439px) {
     .map-container {
         height: 50vh;
         width: auto;

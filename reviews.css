@@ -177,6 +177,21 @@
     transform: translateY(7px);
 }
 
+/* Message */
+.message-sent {
+    height: 5vh;
+    max-width: 10vw;
+    min-width: 30%;
+    background-color: var(--hebrews-bluegreen);
+    border-radius: 1rem;
+    margin-top: 3vh;
+}
+
+.message-sent-text {
+    color: var(--hebrews-lightbrown);
+    text-align: center;
+}
+
 /* Other Animations */
 .exit-animation {
     transition: opacity 1s ease-in-out;

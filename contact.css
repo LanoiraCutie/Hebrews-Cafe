@@ -165,6 +165,22 @@
     opacity: 0;
 }
 
+/* Message */
+.message-sent {
+    height: 5vh;
+    max-width: 10vw;
+    min-width: fit-content;
+    background-color: var(--hebrews-bluegreen);
+    border-radius: 1rem;
+    margin-top: 2vh;
+}
+
+.message-sent-text {
+    color: var(--hebrews-lightbrown);
+    padding: 0 2vw;
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     .main-container {
         padding: .5em;
@@ -186,7 +202,7 @@
     }
 }
 
-@media only screen and (min-width: 768px)  and (max-width: 1599px){
+@media only screen and (min-width: 768px)  and (max-width: 1023px){
     .main-container {
         padding: .5em;
     }
@@ -204,5 +220,17 @@
 
     .contact-pic {
         width: 6vw;
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1599px) {
+    .contact-content-container {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .main-container {
+        padding: .5em;
     }
 }
