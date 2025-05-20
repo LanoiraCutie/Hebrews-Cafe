@@ -1,0 +1,391 @@
+/* body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+:root {
+    --hebrews-bluegreen: rgba(42, 59, 66, 1);
+    --hebrews-lightbrown: rgba(201, 195, 181, 1);
+}
+
+/* Positions */
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+/* Displays */
+.disp-none {
+    display: none;
+}
+
+.disp-block {
+    display: block;
+}
+
+.disp-grid {
+    display: grid;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+/* Other Universal rules */
+.padding10px {
+    padding: 10px;
+}
+
+section.main-content {
+    width: 60vw;
+    height: 50vh;
+}
+
+.home-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.disp-block {
+    display: block;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-container {
+    position: relative;
+}
+
+.pic-container>img {
+    max-height: 100%;
+    width: auto;
+}
+
+.he90perc {
+    height: 90%;
+}
+
+.he250px {
+    height: 425px;
+}
+
+.wi-aut {
+    width: auto;
+}
+
+.ex-test-cont {
+    color: var(--hebrews-bluegreen);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Best Sellers */
+
+.bestseller-area {
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+    background-color: var(--hebrews-bluegreen);
+}
+
+.bestseller-area * {
+    color: var(--hebrews-lightbrown);
+}
+
+.bestseller-container {
+    --padding: 2em;
+
+    padding: var(--padding);
+    height: calc(100% - (var(--padding) * 2));
+}
+
+.bestseller-header-container {
+    justify-content: space-between;
+}
+
+.bestseller-title-container {
+    font-size: 40px;
+    margin-bottom: 5vh;
+}
+
+/* Products (Best-Seller) */
+.products-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.products-container::-webkit-scrollbar {
+    background: transparent;
+    height: 1vh;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.aspect-r {
+    aspect-ratio: 1/1;
+}
+
+.product {
+    width: auto;
+    height: 100%;
+}
+
+.productimg-container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+}
+
+.productimg {
+    bottom: 0;
+}
+
+.product-text, .product-price {
+    font-family: Hebrews-Child, Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+}
+
+.product-text {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2vh;
+}
+
+.product-price {
+    text-align: center;
+    font-size: 15px;
+}
+
+.product-nomarg {
+    margin-inline-start: 0 !important;
+    margin-inline-end: 0 !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+/* Short Info */
+.aboutshort-area {
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    background-color: var(--hebrews-lightbrown);
+}
+
+.aboutshort-container {
+    --padding: 2em;
+
+    padding: var(--padding);
+    height: calc(100% - (var(--padding) * 2));
+}
+
+.aboutshort-title-container {
+    color: var(--hebrews-bluegreen);
+    font-size: 50px;
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
+
+.aboutshort-content-container {
+    color: var(--hebrews-bluegreen);
+    margin: 2.5vh 2vw 5vh;
+    font-size: 20px;
+}
+
+/* Button: Shop Now */
+
+.shopnow-container {
+    display: block;
+    height: 5%;
+    width: auto;
+}
+
+.button {
+    background-color: var(--hebrews-lightbrown);
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 1rem;
+    color: rgba(3, 0, 0, 1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button a {
+    color: rgba(3, 0, 0, 1);
+}
+
+.button:hover {
+    background-color: var(--hebrews-bluegreen);
+    border: 2px solid var(--hebrews-lightbrown);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover span {
+    color: var(--hebrews-lightbrown);
+}
+
+.button:active {
+    background-color: var(--hebrews-bluegreen);
+    box-shadow: 0 5px #666;
+    transform: translateY(7px);
+}
+
+.button span {
+    color: var(--hebrews-bluegreen);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgba(232, 229, 226, 1);
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.margined {
+    margin-top: 1rem;
+}
+
+/* Animations */
+
+.main-animate-before {
+    transform: translateY(60%);
+    opacity: 0;
+}
+
+.main-animate {
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in;
+}
+
+.main-animate-after {
+    opacity: 1;
+}
+
+.button-animate-before {
+    opacity: 0;
+}
+
+.button-animate-after {
+    opacity: 1;
+}
+
+.button-animate {
+    transition: opacity 1s ease-in 1.5s, background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.exit-animation {
+    transition: opacity 1s ease-in-out;
+}
+
+.exit-animate {
+    opacity: 0;
+}
+
+.content-anim {
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.content-before {
+    opacity: 0;
+    transform: translateY(20px)
+}
+
+.content-after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 600px) {
+    section.main-content {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .pic-container>img {
+        max-height: 100%;
+        height: 20vh !important;
+        width: auto;
+    }
+    
+    .bestseller-area {
+        height: 70vh;
+    }
+
+    .aboutshort-area {
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 1599px) {
+    section.main-content {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .pic-container>img {
+        max-height: 100%;
+        height: 20vh !important;
+        width: auto;
+    }
+    
+    .bestseller-area {
+        height: 60vh;
+    }
+
+    .aboutshort-area {
+        height: 60vh;
+    }
+}

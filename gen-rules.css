@@ -1,0 +1,493 @@
+/* General stakeholder font*/
+@font-face {
+    font-family: Font-Hebrews;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hebrews-Child;
+    src: url(Quicksand_Light.otf);
+}
+
+:root {
+    --hebrews-bluegreen: rgba(42, 59, 66, 1);
+    --hebrews-lightbrown: rgba(201, 195, 181, 1);
+}
+
+.hc-font {
+    font-family: Hebrews-Child, Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+}
+
+.fo-he {
+    font-family: Font-Hebrews;
+}
+
+/* HTML rules */
+
+html {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+html * {
+    font-family: Font-Hebrews, Arial, Helvetica, sans-serif;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Body: Background*/
+body {
+    background-image: url('./pics/hebrews-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    max-width: 100vw;
+    display: table-cell;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.blurred {
+    backdrop-filter: blur(4px) !important;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.inherited {
+    height: 100%;
+}
+
+.inherited-w {
+    width: 100%;
+}
+
+/* Other */
+.margin-bottom-5vh {
+    margin-bottom: 5vh;
+}
+
+.circle-1rem {
+    border-radius: 1rem;
+}
+
+.disable-pointer {
+    pointer-events: none;
+}
+
+/*Alignments */
+.aligned-cont {
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-left {
+    justify-content: left;
+}
+
+.align-s-ctr {
+    align-self: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-self-c {
+    justify-self: center;
+}
+
+.justify-self-s {
+    justify-self: left;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
+
+/* Header */
+
+.header-heb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(201, 195, 181, 0.5);
+    backdrop-filter: blur(4px);
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
+}
+
+.hamburger-btn {
+    position: relative;
+    z-index: 1001;
+    background: none;
+    border: 0;
+    margin-left: auto;
+    margin-top: 2vh;
+}
+
+.hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--hebrews-lightbrown);
+    transition: all 0.3s ease-in-out;
+}
+
+#head {
+    display: block;
+    position: absolute;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--hebrews-bluegreen);
+    z-index: 1000;
+    transition: right 0.3s ease-out;
+    padding-top: 70px;
+}
+
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mobile-menu-item {
+    color: var(--hebrews-bluegreen);
+    background-color: var(--hebrews-lightbrown);
+    padding: 18px 25px;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0 15px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.mobile-menu-item:hover {
+    background-color: rgba(201, 195, 181, 0.2);
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.activemenu {
+    right: 0;
+}
+
+.mobile-menu-overlay.activemenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.button-container .he-bu {
+    position: relative;
+    border: none;
+    outline: 0;
+    padding: 20px 0 40px;
+    margin: 20px;
+    color: rgba(232, 229, 226, 1);
+    background: 0 0;
+    font-size: 30px;
+    justify-self: right;
+    transition: color 0.7s ease-in-out;
+}
+
+.margin20px {
+    margin: 20px;
+}
+
+.active {
+    color: rgba(98, 58, 41, 1) !important;
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.he-bu:hover {
+    color: rgba(98, 58, 41, 1) !important;
+    transition: color 0.7s ease-in-out;
+}
+
+
+.home-container {
+    justify-self: left !important;
+    margin-left: 50px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.home-hei {
+    height: 75px;
+}
+
+.home-wid {
+    width: auto;
+}
+
+.home-pic {
+    background-image: url('./pics/hebrews-tentative-logo.jpg');
+}
+
+/* Footer */
+.footer {
+    background-color: var(--hebrews-bluegreen);
+    height: 15vh;
+}
+
+.footer-content-container {
+    --padding: 1em;
+
+    justify-content: space-between;
+    padding: var(--padding);
+    height: calc(100% - (var(--padding) * 2));
+}
+
+.footer-content-left {
+    margin-right: 1vw;
+}
+
+.footer-hebrews-title {
+    color: var(--hebrews-lightbrown);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-hebrews-desc {
+    color: var(--hebrews-lightbrown);
+    font-size: 15px;
+}
+
+.footer-socmed-container {
+    margin-right: 1vw;
+}
+
+.footer-socmed-button {
+    background-color: var(--hebrews-lightbrown);
+    border: none;
+    border-radius: 10rem;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    padding: 10px 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2vw;
+}
+
+.footer-socmed-button:hover {
+    background-color: var(--hebrews-bluegreen);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-socmed-button:active {
+    background-color: var(--hebrews-bluegreen);
+    box-shadow: 0 0.5px #666;
+    transform: translateY(7px);
+}
+
+.socmed-img {
+    width: 2vw;
+    height: auto;
+}
+
+/* Opacity Animations */
+.animated {
+    transition: opacity 0.5s ease-in;
+}
+
+.animated-opa-0 {
+    opacity: 0;
+}
+
+.animated-opa-1 {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+        background-position: center;
+        background-image: url('./pics/hebrews-background-1.png');
+    }
+
+    .header-heb {
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    .home-container {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .footer-content-left .home-container {
+        margin-left: 0.3vw;
+    }
+
+    .footer-content-left .home-container .home-hei {
+        height: 40px;
+    }
+
+    .socmed-img {
+        width: 5vw;
+        height: auto;
+    }
+
+    .animated-opa-1 {
+        opacity: 1 !important;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1599px) {
+    body {
+        width: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+        background-position: center;
+        background-image: url('./pics/hebrews-background-1.png');
+    }
+
+    .header-heb {
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    .home-container {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .footer-content-left .home-container {
+        margin-left: 0.3vw;
+    }
+
+    .footer-content-left .home-container .home-hei {
+        height: 40px;
+    }
+
+    .socmed-img {
+        width: 5vw;
+        height: auto;
+    }
+
+    .animated-opa-1 {
+        opacity: 1 !important;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
