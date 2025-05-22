@@ -428,7 +428,7 @@
     }
 }
 
-@media only screen and (min-width: 768px)  and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .title-container {
         height: 50vh;
     }
@@ -464,7 +464,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px)  and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
     .title-container {
         height: 50vh;
     }
@@ -500,10 +500,16 @@
     }
 }
 
-@media only screen and (min-width: 1440px)  and (max-width: 1599px) {
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
     .product {
         width: calc(100%/4 - 20px);
-        height: calc(100vh / 2);
+        height: calc(100vh / 1.30);
         margin-bottom: 8vh;
+    }
+}
+
+@media only screen and (min-height: 650px) {
+    .product {
+        height: calc(100vh / 1.85);
     }
 }
