@@ -312,10 +312,95 @@
     pointer-events: all;
 }
 
+.popup-quantity {
+    text-align: center;
+    background-color: var(--hebrews-lightbrown);
+    border: 2px solid var(--hebrews-bluegreen);
+    height: 5vh;
+    width: 20vw;
+    border-radius: 1rem;
+    color: var(--hebrews-bluegreen);
+}
+
+/* cart (disposable) */
+#cart-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#cart-items li {
+    height: 3vh;
+    border-bottom: 2px solid var(--hebrews-lightbrown);
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-content {
+    background: var(--hebrews-bluegreen);
+    color: var(--hebrews-lightbrown);
+    padding: 30px;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    max-height: 50vh;
+}
+
+.cart-total {
+    height: 5vh;
+}
+
+.cart-removebutton {
+    width: 30%;
+}
+
+.cart-removebutton > img{
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+    min-width: 30px;
+}
+
+.cart-total-text {
+    color: var(--hebrews-lightbrown);
+    border-right: 2px solid var(--hebrews-lightbrown);
+    border-left: 2px solid var(--hebrews-lightbrown);
+    text-align: center;
+    width: 40%;
+}
+
+.cart-total-value {
+    color: var(--hebrews-lightbrown);
+    text-align: center;
+    font-size: large;
+    width: 30%;
+}
+
+#cart-animation h6 {
+    margin-top: 0;
+}
+
+.alert {
+    width: 50%;
+    max-width: 200px;
+    position: relative;
+    text-align: center;
+    background: var(--hebrews-bluegreen);
+    color: var(--hebrews-lightbrown);
+    padding: 30px;
+    border-radius: 1rem;
+    margin-bottom: 3vh;
+}
+
 /* Button */
 
 .button {
-    background-color: rgba(22, 138, 255, 1);
     font-size: 20px;
     font-weight: bolder;
     border: none;
@@ -328,6 +413,27 @@
     transition-duration: 0.5s;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ord-msngr {
+    background-color: rgba(22, 138, 255, 1);
+}
+
+.ord-cart {
+    background-color: var(--hebrews-bluegreen);
+    margin-left: 2vw;
+}
+
+.addtocart {
+    background-color: var(--hebrews-lightbrown);
+}
+
+.addtocart span {
+    color: var(--hebrews-bluegreen) !important; 
+}
+
+.addtocart:hover span {
+    color: var(--hebrews-lightbrown) !important; 
 }
 
 .button a {
@@ -378,7 +484,7 @@
     right: 0;
 }
 
-.messenger {
+.icon {
     height: 2.25vh;
     width: auto;
 }

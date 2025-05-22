@@ -169,6 +169,7 @@ function productPopup() {
             popupPrice.textContent = price;
             popupDesc.textContent = desc;
             popup.classList.remove('disp-none');
+            popup.classList.add("disp-flex");
             setTimeout(() => {
                 popupanimation.classList.remove('popup-animated-bef');
                 popupanimation.classList.add('popup-animated-aft');

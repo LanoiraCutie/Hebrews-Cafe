@@ -103,6 +103,20 @@ body {
     pointer-events: none;
 }
 
+.overflow-y-sc {
+    overflow-y: scroll;
+}
+
+.overflow-y-sc::-webkit-scrollbar {
+    background: transparent;
+    width: 1vh;
+}
+
+.overflow-y-sc::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
 /*Alignments */
 .aligned-cont {
     align-items: center;
